@@ -18,18 +18,18 @@ will transformed to this c# code:
 namespace MyApp.Localization {
 	public class Locale {
 		
-		public UIClass UI {get; set;}
+		public UI UI {get; set;}
 		
 		public string Name {get; set;}
 		
-		public class UIClass {
-			public string Text1 {get; set;}
-			public ButtonsClass Buttons {get; set;}
-		}
-		public class Buttons 
-		{
-			public string CloseButton {get; set;}
-		}
+	}
+	public class UI {
+		public string Text1 {get; set;}
+		public Buttons Buttons {get; set;}
+	}
+	public class Buttons 
+	{
+		public string CloseButton {get; set;}
 	}
 }
 ```  
